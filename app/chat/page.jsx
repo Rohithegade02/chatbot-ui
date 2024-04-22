@@ -17,10 +17,10 @@ import Logout from '../components/Logout';
 const Chat = () => {
 	const [showDrawer, setShowDrawer] = useState(false);
 	const [showLogout, setShowLogout] = useState(false);
-	console.log(showLogout);
+
 	const router = useRouter();
 	return (
-		<div className=' lg:flex lg:m-4 lg:gap-5'>
+		<div className=' lg:flex lg:my-4 lg:mx-14 lg:gap-3'>
 			<div className='hidden lg:flex lg:flex-col lg:justify-between lg:w-[20%]'>
 				<div className='flex p-5 gap-3 items-center '>
 					<div>
@@ -38,7 +38,7 @@ const Chat = () => {
 					</button>
 				</div>
 				<div>
-					<div className='mt-5'>
+					<div className=''>
 						<div>
 							<div className="flex items-center before:flex-1 before:content-[''] before:bg-[#353E41] before:p-0.5 before:m-1 after:flex-1 after:content-[''] after:bg-[#353E41] after:p-0.5 after:m-1">
 								TODAY
@@ -59,20 +59,23 @@ const Chat = () => {
 						<ChatCard />
 					</div>
 				</div>
-				<div className='flex items-center gap-3  bg-[rgba(255, 255, 255, 0.5)] p-1 rounded-lg hover:bg-[#4C4E4F] hover:duration-500 z-5'>
-					<div className=''>
-						<User
-							size={30}
-							fill='#d9d9d9'
-							className=' text-[#d9d9d9] rounded-full'
-						/>
-					</div>
-					<div className='flex flex-col'>
-						<div>
-							<p>Test User</p>
+				<div>
+					<div className=' mb-2 border border-t-1 border-[#353e41] rounded-sm text-[#353E41]'></div>
+					<div className='flex items-center gap-3  bg-[rgba(255, 255, 255, 0.5)] p-1 rounded-lg hover:bg-[#4C4E4F] hover:duration-500 z-5'>
+						<div className=''>
+							<User
+								size={30}
+								fill='#d9d9d9'
+								className=' text-[#d9d9d9] rounded-full'
+							/>
 						</div>
-						<div>
-							<p className=' text-[8px] text-gray-400 '>Test User User</p>
+						<div className='flex flex-col'>
+							<div>
+								<p>Test User</p>
+							</div>
+							<div>
+								<p className=' text-[8px] text-gray-400 '>Test User User</p>
+							</div>
 						</div>
 					</div>
 				</div>
