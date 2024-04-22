@@ -1,6 +1,7 @@
 import { Delete, RotateCw, Send, Trash2 } from 'lucide-react';
 
 const ChatCardOption = () => {
+	//option for the chats
 	return (
 		<div className='flex flex-col p-2 ml-[35%]  bg-[#4C4E4F] rounded-2xl w-[100%]'>
 			<div className='flex items-center p-2 gap-4 justify-between  '>

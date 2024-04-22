@@ -15,7 +15,9 @@ import Drawer from '../components/Drawer';
 import Logout from '../components/Logout';
 
 const Chat = () => {
+	//TO SHOW DRAWER OPTIONS
 	const [showDrawer, setShowDrawer] = useState(false);
+	//TO SHOW LOGOUT OPTIONS
 	const [showLogout, setShowLogout] = useState(false);
 
 	const router = useRouter();
@@ -61,17 +63,17 @@ const Chat = () => {
 				</div>
 				<div>
 					<div className=' mb-2 border border-t-1 border-[#353e41] rounded-sm text-[#353E41]'></div>
-					<div className='flex items-center gap-3  bg-[rgba(255, 255, 255, 0.5)] p-1 rounded-lg hover:bg-[#4C4E4F] hover:duration-500 z-5'>
+					<div className='  flex items-center gap-3  bg-[rgba(255, 255, 255, 0.5)] p-1 rounded-lg hover:bg-[#4C4E4F] hover:duration-500 z-5'>
 						<div className=''>
 							<User
 								size={30}
 								fill='#d9d9d9'
-								className=' text-[#d9d9d9] rounded-full'
+								className=' text-[#d9d9d9] rounded-full cursor-pointer'
 							/>
 						</div>
 						<div className='flex flex-col'>
 							<div>
-								<p>Test User</p>
+								<p className='cursor-pointer'>Test User</p>
 							</div>
 							<div>
 								<p className=' text-[8px] text-gray-400 '>Test User User</p>
@@ -90,7 +92,7 @@ const Chat = () => {
 								className=' text-[#d9d9d9] rounded-full'
 							/>
 						</div>
-						<div className='flex flex-col'>
+						<div className='flex flex-col cursor-pointer'>
 							<div>
 								<p className='text-black font-bold'>Test User</p>
 							</div>
@@ -124,7 +126,7 @@ const Chat = () => {
 					</div>
 					{showLogout && (
 						<div className='absolute top-[9%] left-[51.5%] z-10 '>
-							<Logout show={showLogout} setShowLogout={setShowLogout} />
+							<Logout />
 						</div>
 					)}
 

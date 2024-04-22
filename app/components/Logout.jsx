@@ -1,7 +1,8 @@
 import { LogOut } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-const Logout = ({ show, setShow }) => {
+const Logout = () => {
+	//logout option
 	const router = useRouter();
 	return (
 		<div className='flex flex-col p-2 ml-[35%]  bg-[#4C4E4F] rounded-2xl w-[100%]'>

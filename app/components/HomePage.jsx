@@ -1,5 +1,5 @@
 'use client';
-import { FolderOpen, Lock, Mail, MessagesSquare, User } from 'lucide-react';
+import { Lock, Mail, MessagesSquare, User } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 const HomePage = () => {
@@ -93,7 +93,7 @@ const HomePage = () => {
 						</div>
 						<div className='relative'>
 							<input
-								className='h-[40px] rounded-lg p-2 text-center lg:p-5 bg-[#DADDE1] text-black outline-none '
+								className='h-[40px] w-[100%] rounded-lg p-2 text-center lg:p-5 bg-[#DADDE1] text-black outline-none '
 								placeholder='Email'
 							/>
 							<div

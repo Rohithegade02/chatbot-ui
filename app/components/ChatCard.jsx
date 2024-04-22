@@ -4,6 +4,7 @@ import ChatCardOption from './ChatCardOption';
 const { MessageSquareMore, GripHorizontal } = require('lucide-react');
 
 const ChatCard = () => {
+	//new card is genrated when the user clicks on new chat
 	const [show, setShow] = useState(false);
 
 	return (

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ChatCard from './ChatCard';
 
 const Drawer = ({ show, setShow }) => {
+	//drawer is created for moile responsive page
 	return (
 		<div className=' flex flex-col justify-between h-[95vh] w-[60vw] bg-[#2A2E2F] p-5 duration-1000 '>
 			<div className='flex justify-between'>
