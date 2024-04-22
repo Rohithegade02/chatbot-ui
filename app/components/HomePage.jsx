@@ -53,7 +53,7 @@ const HomePage = () => {
 					<div className='flex flex-col items-center gap-3 w-[100%]'>
 						<div className='relative'>
 							<input
-								className='h-[40px] p-2 rounded-lg text-center lg:p-5  bg-[#DADDE1] text-black outline-none '
+								className='h-[40px] p-2 rounded-lg text-center lg:px-10 lg:py-7 bg-[#DADDE1] text-black outline-none '
 								placeholder='First name'
 							/>
 							<div
@@ -73,7 +73,7 @@ const HomePage = () => {
 						</div>
 						<div className='relative'>
 							<input
-								className='h-[40px] rounded-lg p-2 text-center lg:p-5 bg-[#DADDE1] text-black outline-none'
+								className='h-[40px] rounded-lg p-2 text-center lg:px-10 lg:py-7 bg-[#DADDE1] text-black outline-none'
 								placeholder='Last name'
 							/>
 							<div
@@ -93,7 +93,7 @@ const HomePage = () => {
 						</div>
 						<div className='relative'>
 							<input
-								className='h-[40px] w-[100%] rounded-lg p-2 text-center lg:p-5 bg-[#DADDE1] text-black outline-none '
+								className='h-[40px] w-[100%] rounded-lg p-2 text-center lg:px-10 lg:py-7 bg-[#DADDE1] text-black outline-none '
 								placeholder='Email'
 							/>
 							<div
@@ -108,7 +108,7 @@ const HomePage = () => {
 						</div>
 						<div className='relative'>
 							<input
-								className='h-[40px] rounded-lg p-2 lg:p-5 text-center bg-[#DADDE1] text-black outline-none '
+								className='h-[40px] rounded-lg p-2 lg:px-10 lg:py-7 text-center bg-[#DADDE1] text-black outline-none '
 								placeholder='Password'
 							/>
 							<div
@@ -125,7 +125,7 @@ const HomePage = () => {
 							<button
 								type='submit'
 								onClick={() => router.push('/chat')}
-								className='bg-[#42B2E4] shadow-lg shadow-cyan-500/50  py-4 text-center px-20 rounded-lg'>
+								className='bg-[#42B2E4] shadow-lg shadow-cyan-500/50 lg:w-[19vw]  py-4 text-center px-20 rounded-lg'>
 								Continue
 							</button>
 						</div>
